@@ -29,11 +29,13 @@ public class Customer {
     private Gender gender;
 
     @Column(name = "dob", columnDefinition = "DATE", nullable = false)
-    private LocalDate dayOfBirth = LocalDate.now();
+    private LocalDate dayOfBirth;
 
+    public Customer() {
+    }
 
     public Long getId() {
-        return null;
+        return id;
     }
 
     public void setId(Long id) {
